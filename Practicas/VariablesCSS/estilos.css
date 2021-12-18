@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Las variables las declaramos aquí porque es la raiz del DOM, si las declaramos dentro de nav (por ejemplo) solo funcionaran en nav y sus hijos */
+:root {
+  --colorFacebook: #3b5999;
+  --colorTwitter: #1DA1F2;
+  --colorYoutube: #cd201f;
+  --colorLinkedin: #0A66C2;
+  --box-shadow: 0 0 6px 3px;
+  --texto: center;
+}
+
+nav {
+  width: 600 px;
+  margin: 20px auto;
+  text-align: var(--texto);
+}
+
+/* Todos aquellos elementos cuya clase empieze (^) por "fab fa" */
+[class^="fab fa"] {
+  font-size: 50px;
+  color: #fff;
+  box-shadow: var(--box-shadow) rgba( 0, 0, 0, 0.5);
+  width: 140px;
+  text-align: var(--texto);
+  padding: 15px 0;
+  border-radius: 10px
+}
+
+/* El elemento X cuya clase empieze (^) por "fab fa" */
+[class^="fab fa"]:nth-child(1) {
+  /* color: var(--colorFacebook, darkblue); */
+  background: var(--colorFacebook, darkblue);
+}
+[class^="fab fa"]:nth-child(2) {
+  /* color: var(--colorTwitter); */
+  background: var(--colorTwitter);
+}
+[class^="fab fa"]:nth-child(3) {
+  /* color: var(--colorYoutube); */
+  background: var(--colorYoutube);
+}
+[class^="fab fa"]:nth-child(4) {
+  /* color: var(--colorLinkedin); */
+  background: var(--colorLinkedin);
+}

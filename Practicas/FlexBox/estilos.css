@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  border: 3px solid indianred;
+  height: 400px;
+  margin: 20px auto;
+  width: 500px;
+  display: flex;
+  /* DIRECCIÓN: Direccion desde la que empiezan los items */
+  /* flex-direction: row; */
+  /* DIRECCIÓN: Como se acomodan los items si desbordan el container */
+  /* flex-wrap: wrap; */
+  /* DIRECCIÓN: Flex-flow es el short de las dos instrucciones anteriores */
+  flex-flow: row wrap;
+  /* ALINEACIÓN: Como alineamos los elementos en el eje principal*/
+  justify-content: space-evenly;
+  /* Revisar https://css-tricks.com para mas propiedades*/
+}
+
+.item {
+  color: #fff;
+  font-size: 30px;
+  width: 80px;
+  height: 100px;
+  text-align: center;
+}
+
+.item1 {
+  background: steelblue;
+}
+
+.item2 {
+  background: violet;
+}
+
+.item3 {
+  background: purple;
+}
+
+.item4 {
+  background: tomato;
+}

@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.section {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.sect1 {
+  background-image: url('img/bubbles.jpg');
+  /* Añadimos el padding para que no genere un espacio en blanco al hacer el calc del margin top en el title */
+  padding-top: calc(50vh - 50px);
+}
+
+.title {
+  background: black;
+  color: #fff;
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  line-height: 100px;
+  /* Restamos 50px porque es la mitad del height del title */
+  /* margin-top: calc(50vh - 50px); */
+}
+
+.sect2 {
+  width: 100%;
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.subtitle {
+  padding: 40px 0;
+}
+
+.sect3 {
+  height: 600px;
+  background-image: url('img/canas.jpg');
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 600px;
+}
+
+.sect4 {
+  height: 600px;
+  background-image: url('img/canas.jpg');
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 100vh;
+}
